@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="30dp"
+        tools:ignore="HardcodedText" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_board"
+        android:layout_marginBottom="20dp"
+        android:columnCount="2">
+
+        <TextView
+            android:id="@+id/txtPlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player: X"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#4CAF50"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txtPlayer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player: O"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#4CAF50"
+            tools:ignore="HardcodedText" />
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_board"
+        android:columnCount="3">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:onClick="check_logic"
+            tools:ignore="UsingOnClickInXml" />
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:onClick="check_logic"
+            tools:ignore="UsingOnClickInXml" />
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:onClick="check_logic"
+            tools:ignore="UsingOnClickInXml" />
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:onClick="check_logic"
+            tools:ignore="UsingOnClickInXml" />
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:onClick="check_logic"
+            tools:ignore="UsingOnClickInXml" />
+        <Button
+            android:id="@+id/btn_6"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:onClick="check_logic"
+            tools:ignore="UsingOnClickInXml" />
+        <Button
+            android:id="@+id/btn_7"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:onClick="check_logic"
+            tools:ignore="UsingOnClickInXml" />
+        <Button
+            android:id="@+id/btn_8"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:onClick="check_logic"
+            tools:ignore="UsingOnClickInXml" />
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:onClick="check_logic"
+            tools:ignore="UsingOnClickInXml" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnReset"
+        android:text="Reset"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:onClick="reset"
+        tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+</LinearLayout>
